@@ -1,0 +1,45 @@
+<h2> Sản Phẩm | Máy Tính </h2>
+<div class="searchbar">
+    <form action="#!timkiem">
+        <!-- tìm kiếm  -->
+        <input type="search" ng-model="timkiem.tenSP" placeholder="Tìm Kiếm ...">
+        <i class="fa fa-search" id="search-icon"></i>
+    </form>
+</div>
+<main>
+    <section class="main-section">
+        <div class="pop-mobiles">
+            <div class="pop-mobiles-2">
+                <ul class="products">
+                    <!-- sản phẩm  -->
+                    <li class="product" ng-repeat="maytinh in shop |filter : timkiem">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="Images/producs-images/Laptops/{{maytinh.url}}" alt="popular mobiles">
+                                <div class="product-over">
+                                    <td><input type="number" ng-model="maytinh.qty" min="1" class="qty"></td>
+                                    <button class="btn-access " style="color: rgb(1, 12, 3);"> thành tiền :{{
+                                        maytinh.gia * maytinh.qty
+                                        |number }} vnđ</button>
+                                    <button class="btn btn-small" ng-click="addItem(maytinh)" ><i
+                                            class="fas fa-cart-plus"></i>Thêm Vào Giỏ</button>
+                                    <a href="https://www.oppo.com/" class="btn btn-small">Thông Tin Hãng</a>
+                                    <!-- <a>-0%</a> -->
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">{{maytinh.tenSP}}</h4>
+                                <span style="color:red" class="badge badge-warning">giá : {{maytinh.gia | number : 0}}
+                                    vnđ</span>
+                                <span class="badge badge-primary">hàng còn : {{maytinh.tonkho}} </span>
+                                <p class="den">
+                                    {{maytinh.thongtin}}
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>

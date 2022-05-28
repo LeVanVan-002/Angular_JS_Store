@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="./CSS/style.css">
+	<link rel="stylesheet" href="./CSS/lienhe.css">
+	<link rel="stylesheet" href="./CSS/page.css">
+	<link rel="stylesheet" href="./CSS/cart.css">
+	<link rel="stylesheet" href="./CSS/main.css">
+	<script src="./JS/jquery-3.5.1.min.js"></script>
+	<script src="./JS/multislider.min.js"></script>
+	<!-- Required meta tags -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- link angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.min.js"></script>
+	<!-- <script src="./JS/angular.min.js"></script>
+	<script src="./JS/angular-route.js"></script> -->
+	<script src="./JS/trangchu.js"></script>
+	<script src="./JS/click_cart.js"></script>
+</head>
+<body ng-controller="trangchuCrl" >
+	<button onclick="topFunction()" id="myBtn" title="Go to top">lên đầu trang</button>
+	<!-- phần chữ chạy  -->
+	<script>
+		var txt = "Shop Văn | Uy Tín | Bảo Hành 12 tháng | Mua Ngay  ";
+		var expert = 200;
+		var refresh = null;
+		function marquee_title() {
+			document.title = txt;
+			txt = txt.substring(1, txt.lenghth) + txt.charAt(0);
+			refresh = setTimeout("marquee_title()", expert);
+		}
+		marquee_title();
+	</script>
+	<!-- <div ng-controller="productCtrl"> -->
+	<!--Navbar-->
+	<!--  include phần menu  -->
+	<div ng-include="'./layout/menu.html'"></div>
+	<!-- include phần haeder vào  -->
+	<div ng-include="'./layout/header.html'"></div>
+	<!--  -->
+	<main>
+		<section class="main-section">
+			<div class="pop-mobiles">
+				<!-- Điều khiển trạng thái loading cần biết trạng đang tải, đã tải hay gặp lỗi ,bẫy lỗi trạng thái  -->
+				<!-- bẫy thành công  -->
+				<div ng-show="loading">
+					<div id="loading-wrapper">
+						<div id="loading-text">Đang tải...</div>
+						<div id="loading-content"></div>
+					  </div>
+				</div>
+				<!-- phần nị dung sẽ hiễn thị ở đây  -->
+				<!-- <div ng-include="'./view/SP_dienthoai.html'"></div> -->
+				<div ng-view></div>
+			</div>
+		</section>
+	</main>
+	<!--  include phần footer -->
+	<div ng-include="'./layout/footer.html'"></div>
+	<!-- </div> -->
+	<script src="./JS/start_page.js"></script>
+	<script src="./JS/jquery.min.js"></script>
+	<script src="./JS/main.js"></script>
+</body>
+
+</html>

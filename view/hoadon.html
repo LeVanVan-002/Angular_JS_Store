@@ -1,0 +1,43 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <h5 class="modal-title">Thông Tin Đơn Hàng Của Bạn</h5>
+        <span class="close"><i class="fa fa-check text-success"></i></span>
+    </div>
+    <div class="modal-body">
+        <div class="cart-row">
+            <span class="cart-price cart-header cart-column">
+                <h4>số lượng</h4>
+            </span>
+            <span class="cart-price cart-header cart-column">hình ảnh sản phẩm</span>
+            <span class="cart-price cart-header cart-column">tên sản phẩm</span>
+            <span class="cart-item cart-header cart-column">mô tả sản phẩm</span>
+            <span class="cart-price cart-header cart-column">khuyến mãi</span>
+            <span class="cart-price cart-header cart-column">thành tiền</span>
+        </div>
+        <ul>
+            <li class="animate-repeat cart-row" ng-repeat="cuahang in cart">
+                <span class="cart-price cart-header cart-column"><input type="number"
+                        value="{{ cuahang.qty}}" ng-model="cuahang.qty" min="1" class="qty"></span>
+                <span class="cart-price cart-header cart-column"> <img
+                        src="Images/producs-images/tatca/{{cuahang.url}}" alt="popular mobiles"
+                        width="50" height="50"></span>
+                <span class="cart-price cart-header cart-column">{{ cuahang.tenSP}}</span>
+                <span class="cart-item cart-header cart-column">{{ cuahang.thongtin }}</span>
+                <span class="cart-item cart-header cart-column badge ">{{ cuahang.khuyenmai }} %</span>
+                <span class="cart-price cart-header cart-column">{{ (getCost(cuahang) | number) }}vnđ</span>
+                <button class="btn-danger btn-xs" ng-click="removeItem(cuahang);"> hủy đơn hàng  </button>
+                </br>
+                </br>
+            </li>
+        </ul>
+        <div class="cart-total">
+            <strong class="cart-total-title">Tổng Cộng:</strong>
+            <span class="cart-total-price"> {{ getTotal() | number }} Vnđ</span>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#/!">
+            <button type="button" class="btn btn-primary order ">quay lại trang chủ </button>
+        </a>
+    </div>
+</div>

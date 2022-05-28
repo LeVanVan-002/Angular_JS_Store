@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" href="../CSS/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="../CSS/thanhtoan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../JS/jquery-3.5.1.min.js"></script>
+  <script src="../JS/script.js"></script>
+  <script src="../shoppingCart.js"></script>
+</head>
+
+<body>
+  <!-- phần chữ chạy  -->
+  <script>
+    var txt = "Shop Văn | Thanh Toán Giao Hàng Tận Nơi | Bảo Hành 12 tháng | Mua Ngay  ";
+    var expert = 200;
+    var refresh = null;
+    function marquee_title() {
+      document.title = txt;
+      txt = txt.substring(1, txt.lenghth) + txt.charAt(0);
+      refresh = setTimeout("marquee_title()", expert);
+    }
+    marquee_title();
+  </script>
+  <script>
+    function Hoidap() {
+      question = confirm("Đơn hàng đã nhận, Tiếp tục mua sắm !!")
+      if (question != "0") {
+        top.location = "../../index.html"
+      }
+    }
+  </script>
+  <!-- thông báo  -->
+  <script>
+    window.alert("Vui lòng điền đầy đủ thông tin , thuận tiện cho việc giao hàng của bạn !");
+  </script>
+  <h2 style="text-align: center ; ">Tiến Hành Thanh Toán Giỏ Hàng Của Bạn</h2>
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="../view/thanhcong.html">
+          <div class="row">
+            <div class="col-50">
+              <h3>
+                bạn vui lòng chuẩn bị trước số tiền là
+                <span class="cart-total-price"> {{ getTotal() | number }} Vnđ Để thuận tiện cho việc giao hàng</span>
+              </h3>
+              <label for="fname"><i class="fa fa-user"></i> Họ & Tên</label>
+              <input type="text" id="fname" name="firstname" placeholder="ex: Lê Văn Văn">
+              <label for="email"><i class="fa fa-envelope"></i>Địa Chỉ Email</label>
+              <input type="text" id="email" name="email" placeholder="LeVanVan009@gmail.com">
+              <label for="adr"><i class="fa fa-address-card-o"></i> Địa Chỉ Giao Hàng</label>
+              <input type="text" id="adr" name="address" placeholder="ấp 4 / Đông Thạnh/ Hóc Môn">
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input type="text" id="city" name="city" placeholder="ex:TP. Hồ Chí Minh">
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="state">Số Điện Thoại Liên Hệ</label>
+                  <input type="text" id="state" name="state" placeholder="************">
+                </div>
+                <div class="col-50">
+                  <label>Bạn vui lòng điền chính xác thông tin của mình để việc giao hàng nhanh chóng và tiện
+                    lợi!!!!</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Phương Thức Thanh toán</h3>
+              <label for="fname">Thẻ được chấp nhận hoặc thanh toán khi nhận hàng</label>
+
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Tên trên thẻ</label>
+              <input type="text" id="cname" name="cardname" placeholder="ex : LE VAN VAN">
+              <label for="ccnum">Số thẻ </label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+
+              <div class="row">
+
+                <div class="col-50">
+                  <label for="cvv">Số Tiền</label>
+                  <input type="text" id="sum-prices" name="cvv" placeholder="{{ getTotal() | number }} Vnđ ">
+                </div>
+              </div>
+              <h3> thanh toán khi nhân hàng </h3>
+              <input type="radio" ng-model="myVar" value="save" checked="checked"> đồng ý
+              <input type="radio" ng-model="myVar" value="2"> khác
+              <div ng-switch="myVar">
+                <div ng-switch-when="save">
+                  <p>bạn vui lòng chuẩn bị trước số tiền là <a style="color:black">{{ getTotal() | number }} </a> Vnđ Để
+                    thuận tiện cho việc giao hàng </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="account">
+            <button class="account-btn"><i></i></button>
+            <span class="account-text">Cảm Ơn Bạn Đã Mua Hàng , Chúng tôi sẽ giao hàng cho bạn trong thời gian tới
+            </span>
+          </div>
+          <!--  -->
+          <input onclick="Hoidap() ; return false ; " ng-click="clearCart();" type="submit"
+            value=">>>Xác Nhận Việc Mua Hàng<<<" class="btn">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <script src="../JS/script.js"></script>
+  <script src="../JS/jquery-3.5.1.min.js"></script>
+  <script src="../JS/multislider.min.js"></script>
+</body>
+
+</html>

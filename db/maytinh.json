@@ -1,0 +1,20 @@
+[
+    {"id": 47 , "url": "laptop-1.png",  "tenSP": "HP" , "gia": 30000000 ,"qty":1 , "tonkho": 31 ,
+     "thongtin": "Bộ vi xử lý i3-1005G1, 4GB RAM xử lý tác vụ ổn định, khả năng đa nhiệm tốt" },
+
+    {"id": 47 , "url": "laptop-2.png",  "tenSP": "ASUS" , "gia": 21000000 ,"qty":1 , "tonkho": 31 ,
+     "thongtin": "Full HDCPU: Intel Core i7 Tiger Lake, 2.80 GHzCard: Intel Iris Xe GraphicsNặng: 1.17 kg, Pin: 4-cell Li-ion, 67 Wh" },
+
+
+    {"id": 49 , "url": "laptop-3.png",  "tenSP": "Dell" , "gia": 17000000 ,"qty":1 , "tonkho": 31 ,
+     "thongtin": "Full HD. CPU: Intel Core i7 Comet Lake, 2.60 GHz. Card: NVIDIA GeForce GTX 1660Ti, 6 GB. Nặng: 2.58 kg, Pin: 4-cell Li-ion, 68 Wh" },
+
+    { "id": 50 ,"url": "laptop-4.png",  "tenSP": "Acer" , "gia": 19000000 ,"qty":1 , "tonkho": 31 ,
+     "thongtin": "15.6 inch, Full HD. CPU: Intel Core i5 Coffee Lake, 2.40 GHz,Nặng: 2.1 kg, Pin: 48 Wh Li-ion" },
+
+     {"id": 90909 , "url": "laptop-3.png",  "tenSP": "Dell" , "gia": 17000000 ,"qty":1 , "tonkho": 31 ,
+    "thongtin": "Full HD. CPU: Intel Core i7 Comet Lake, 2.60 GHz. Card: NVIDIA GeForce GTX 1660Ti, 6 GB. Nặng: 2.58 kg, Pin: 4-cell Li-ion, 68 Wh" },
+   
+    { "id": 564 ,"url": "laptop-4.png",  "tenSP": "Acer" , "gia": 19000000 ,"qty":1 , "tonkho": 31 ,
+    "thongtin": "15.6 inch, Full HD. CPU: Intel Core i5 Coffee Lake, 2.40 GHz,Nặng: 2.1 kg, Pin: 48 Wh Li-ion" }
+]

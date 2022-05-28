@@ -1,0 +1,47 @@
+[
+    {"id": 1 , "url": "tainghe.jpg",  "khuyenmai": -9 ,"tenSP": "Tai Nghe Có Dây", "gia": 150000 , "qty":1 , "tonkho": 11 ,
+     "thongtin": " Thiết kế trẻ trung hiện đại. Công nghệ âm thanh độc quyền" },
+
+    {"id": 2 , "url": "card.jpg",  "khuyenmai": -0 ,"tenSP": "Card màn hình ", "gia": 250000 ,"qty":1 , "tonkho": 44 ,
+    "thongtin": "sở hữu hệ thống làm mát ,kéo sợi thay thế,cung cấp tản nhiệt hiệu quả cao." , "onSale" : true },
+
+    {"id": 3 , "url": "case.jpg",  "khuyenmai": -11 ,"tenSP": "Vỏ case máy tính mặt kính LED", "gia": 1000000 ,"qty":1 , "tonkho": 21 ,
+    "thongtin": " Vỏ case máy tính cho main serverPhù hợp những loại main to 2 cpu " },
+
+    {"id":4  , "url": "chuot2.jpg",  "khuyenmai": -10 ,"tenSP": "Chuột không dây Logitech G102 ", "gia": 99000 ,"qty":1 , "tonkho": 8 ,
+    "thongtin": " công nghệ mới, di chuyển nhẹ nhàng mà không kén bề mặt, được thiết kế phù hợp" },
+
+    {"id": 5 , "url": "sacdt.jpg",  "khuyenmai": -0 ,"tenSP": "Sạc điện thoại", "gia": 50000 ,"qty":1 , "tonkho": 10 ,
+    "thongtin": " Bộ sạc nhanh dùng cho điện thoại" },
+
+    {"id": 6 , "url": "case3.jpg",  "khuyenmai": -3 ,"tenSP": "Vỏ case XIGMATEK NYX", "gia": 1200000 ,"qty":1 , "tonkho": 60 ,
+    "thongtin": "cho phép nhìn rõ các quạt LED phía trước của bạn trong khi vẫn cung cấp luồng không khí và lưu thông vượt trội" },
+
+    {"id": 7 , "url": "phim+chuot.jpg",  "khuyenmai": -8 ,"tenSP": "combo bàn phím + chuột", "gia": 500000 ,"qty":1 , "tonkho": 12 ,
+    "thongtin": " combo 1 bàn phím + 1 chuột không dây dành cho máy tính lap", "onSale" : true },
+
+    {"id": 8 , "url": "loa1.jpg",  "khuyenmai": -13 ,"tenSP": "loa máy tính", "gia": 260000 ,"qty":1 , "tonkho": 31 ,
+    "thongtin": " loa có âm thanh sắc nét và sống động, nâng tầm trải nghiệm  " },
+
+    {"id": 9 , "url": "taingheblu.jpg",  "khuyenmai": -11 ,"tenSP": "tai nghe bluetooth", "gia": 450000 ,"qty":1 , "tonkho": 34 ,
+    "thongtin": " Tai nghe không dây Airpods , dung lượng pin cao , dùng mọi loại máy tương thích " },
+
+    {"id": 10 , "url": "ram.jpg",  "khuyenmai": -10 ,"tenSP": " Thanh Ram 8GB DDR4 1x8G 2666", "gia": 2000000 ,"qty":1 , "tonkho": 43 ,
+    "thongtin": " ASUS Dung lượng 8GB , bảo hành 36 tháng " },
+
+    {"id": 11 , "url": "phim+chuot2.jpg",  "khuyenmai": -5 ,"tenSP": "chuột + bàn phím (màu hồng)", "gia": 499000 ,"qty":1 , "tonkho": 28 ,
+    "thongtin": "combo 1 bàn phím(hồng)+ 1 chuột không dây dành cho máy tính lap" },
+
+    {"id":12  , "url": "loa2.jpg",  "khuyenmai": -13 ,"tenSP": "Loa máy tính gọn nhẹ", "gia": 899000 ,"qty":1 , "tonkho": 18 ,
+    "thongtin": "dòng loa máy tính entry-level ở phân khúc thấp của hãng Logitech" },
+
+    {"id": 13 , "url": "in_output.jpg",  "khuyenmai": -0 ,"tenSP": "Cáp tín hiệu VGA ", "gia": 99000 ,"qty":1 , "tonkho": 14 ,
+    "thongtin": " Dễ dàng sử dụng Cắm là chạy Sử dụng bền bỉ và an toàn" },
+    
+    {"id":14  , "url": "chuot.jpg",  "khuyenmai": -15 ,"tenSP": "Chuột Có dây", "gia": 160000 ,"qty":1 , "tonkho": 9 ,
+    "thongtin": "Thiết kế cổ điển , DPI tối đa 8000 ,Kết nối USB  " },
+    
+    {"id": 15 , "url": "tainghe.jpg",  "khuyenmai": -11 ,"tenSP": "Tai Nghe Có Dây", "gia": 199000 ,"qty":1 , "tonkho": 11 ,
+    "thongtin": " Thiết kế trẻ trung hiện đại. Pin nghe bền bỉ. Công nghệ âm thanh độc quyền" }
+    
+]

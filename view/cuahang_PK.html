@@ -1,0 +1,95 @@
+
+<h1>Cửa Hàng | Phụ Kiện | Chính Hãng </h1>
+<div class="searchbar">
+    <form action="#!timkiem">
+        <!-- tìm kiếm  -->
+        <input type="search" ng-model="timkiem.tenSP" placeholder="nhập tên sản phẩm ...">
+        <i class="fa fa-search" id="search-icon"></i>
+    </form>
+</div>
+<h4>Sắp xếp sản phẩm theo </h4>
+<button class="btn btn-warning"><a href="" ng-click="sortBy('gia')"> Đơn Giá Tăng/Giảm</a></button>
+||
+<button class="btn btn-warning"><a href="" ng-click="sortBy('tenSP')">Tên Hàng A->Z</a></button>
+
+<main>
+    <section class="main-section">
+        <div class="pop-mobiles">
+            <div class="pop-mobiles-2">
+                <ul class="products">
+                    <li class="product animate-repeat"
+                        ng-repeat="cuahang in shop | orderBy : cot : options | limitTo : 6 : begin | filter : timkiem">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="Images/producs-images/Phukien/{{cuahang.url}}" alt="popular mobiles">
+                                <div class="product-over">
+                                    <!-- đổ vào đây thoogn tin điện thoại luôn -->
+                                    <a class="btn-warning" style="color: rgb(255, 0, 0)">giảm
+                                        {{cuahang.khuyenmai}}%</a>
+                                    <td><input type="number" ng-model="cuahang.qty" min="1" class="qty"></td>
+                                    <button class="btn-access " style="color: rgb(1, 12, 3);"> thành tiền :{{
+                                        cuahang.gia * cuahang.qty
+                                        |number }} vnđ</button>
+                                    <button class="btn btn-small fas fa-cart-plus" ng-click="addItem(cuahang)"><i
+                                        class="fas fa-cart-plus"></i>Thêm vào
+                                        giỏ</button>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">{{cuahang.tenSP | uppercase}}</h4>
+                                <span style="color:red" class="badge badge-warning"
+                                    ng-class="{ 'on-sale' : cuahang.onSale }">giá :{{cuahang.gia | number : 0}}
+                                    vnđ</span>
+                                <span class="badge badge-primary">hàng còn : {{cuahang.tonkho}} </span>
+                                <p class="den">
+                                    {{cuahang.thongtin}}
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <div class="modal-body">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">Số Lượng</span>
+                <span class="cart-price cart-header cart-column">mô tả sản phẩm</span>
+                <span class="cart-quantity cart-header cart-column">thành tiền</span>
+            </div>
+            <ul>
+                <li class="animate-repeat cart-row" ng-repeat="cuahang in cart">
+                    <span class="cart-item cart-header cart-column">{{ cuahang.qty}}</span>
+                    <span class="cart-price cart-header cart-column">{{ cuahang.thongtin }}</span>
+                    <span class="cart-quantity cart-header cart-column">{{ (getCost(cuahang) | number) }}</span>
+                    <button class="btn-danger btn-xs" ng-click="removeItem(cuahang);">xóa </button>
+                    </br>
+                    </br>
+                </li>
+            </ul>
+            <div class="cart-total">
+                <strong class="cart-total-title">Tổng Cộng:</strong>
+                tổng số tiền sản phẩm
+                <span class="cart-total-price"> {{ getTotal() }} VNĐ</span>
+                <button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
+            </div>
+
+        </div> -->
+
+
+        <ul class="pagination justify-content-center">
+            <!-- trang đầu -->
+            <li class="page-item active"><a class="page-link" ng-click="first()">Đầu</a> </li>
+            <li class="page-item "><a class="page-link" ng-click="prev()">trước</a> </li>
+            <!-- 6 ssnar phẩm tiếp theo -->
+            <li class="page-item"><a class="page-link" ng-click="next()">2</a></li>
+            <li class="page-item"><a class="page-link" ng-click="next()">3</a></li>
+            <li class="page-item"><a class="page-link">...</a></li>
+            <li class="page-item active"><a class="page-link" ng-click="last()">Cuối</a></li>
+            <!-- trang cuối -->
+        </ul>
+
+    </section>
+</main>
+<script src="./JS/click_cart.js"></script>
+

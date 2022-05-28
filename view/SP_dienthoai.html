@@ -1,0 +1,42 @@
+<h2> Sản Phẩm | Điện Thoại </h2>
+<div class="searchbar">
+    <form action="#!timkiem">
+        <!-- tìm kiếm  -->
+        <input type="search" ng-model="timkiem.tenSP" placeholder="Tìm Kiếm ...">
+        <i class="fa fa-search" id="search-icon"></i>
+    </form>
+</div>
+<main>
+    <section class="main-section">
+        <div class="pop-mobiles">
+            <div class="pop-mobiles-2">
+                <ul class="products">
+                    <li class="product" ng-repeat="dienthoai in shop |filter : timkiem">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="Images/producs-images/Mobiles/{{dienthoai.url}}" alt="popular mobiles">
+                                <div class="product-over">
+                                    <td><input type="number" ng-model="dienthoai.qty" min="1" class="qty"></td>
+                                    <button class="btn-access " style="color: rgb(1, 12, 3);"> thành tiền :{{
+                                        dienthoai.gia * dienthoai.qty
+                                        |number }} vnđ</button>
+                                    <button class="btn btn-small " ng-click="addItem(dienthoai)" ><i
+                                            class="fas fa-cart-plus"></i>Thêm Vào Giỏ</button>
+                                    <a href="https://www.oppo.com/" class="btn btn-small">Thông Tin Hãng</a>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">{{dienthoai.tenSP}}</h4>
+                                <span style="color:red" class="badge badge-warning">giá : {{dienthoai.gia | number : 0}} vnđ</span>
+                                <span class="badge badge-primary">hàng còn : {{dienthoai.tonkho}} </span>
+                                <p class="den">
+                                    {{dienthoai.thongtin}}
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>

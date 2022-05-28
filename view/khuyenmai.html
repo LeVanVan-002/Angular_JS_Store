@@ -1,0 +1,47 @@
+<h2>Sản Phẩm Đang Được Giảm Giá  </h2>
+sắp xếp <button class="btn btn-warning"><a href="" ng-click="sortBy('gia')"> Giá Tăng/Giảm</a></button>
+
+<div class="searchbar">
+    <form action="#!timkiem">
+        <!-- tìm kiếm  -->
+        <input type="search" ng-model="timkiem.gia" placeholder="nhập số tiền bạn muốn tìm ....">
+        <i class="fa fa-search" id="search-icon"></i>
+    </form>
+</div>
+<main>
+    <section class="main-section">
+        
+        <!-- <div class="pop-mobiles" ng-repeat="ok in yes"> -->
+            <div class="pop-mobiles"> 
+            <div class="pop-mobiles-2">
+                <ul class="products">
+                    <!-- sản phẩm  -->
+                    <li class="product" ng-repeat="khuyenmai in shop | orderBy : giacon : tien |filter : timkiem">
+                        <div class="product-under">
+                            <figure class="product-image">
+                                <img src="Images/producs-images/Khuyenmai/{{khuyenmai.url}}" alt="popular mobiles">
+                                <span class="badge badge-danger"> khuyến mãi :{{khuyenmai.khuyenmai}} %</span>
+                                <div class="product-over">
+                                    <td><input type="number" ng-model="khuyenmai.qty" min="1" class="qty"></td>
+                                    <button class="btn-access " style="color: rgb(1, 12, 3);"> thành tiền :{{
+                                        khuyenmai.gia * khuyenmai.qty
+                                        |number }} vnđ</button>
+                                    <button class="btn btn-small " ng-click="addItem(khuyenmai)"><i
+                                            class="fas fa-cart-plus"></i>Thêm Vào Giỏ</button>
+                                </div>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName">{{khuyenmai.tenSP}}</h4>
+                                <span style="color:red" class="badge badge-warning">giá còn : {{khuyenmai.gia | number : 0}} vnđ</span>
+                                <span class="badge badge-primary">hàng còn : {{khuyenmai.tonkho}} </span>
+                                <p class="den">
+                                    {{khuyenmai.thongtin}}
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>

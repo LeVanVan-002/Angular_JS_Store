@@ -1,0 +1,68 @@
+        
+<div class="login-form">
+        <form  id="register-form" class="form-horizontal" name="form" ng-submit="register()" novalidate>
+            <h1>Đăng nhập Tài Khoản</h1>
+
+            <div class="form-group">
+              <label for="username" class="col-xs-3 control-label required">Tên đăng nhập 
+              </label>
+              <div class="col-xs-9">
+                <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập" ng-model="username"
+                  ng-minlength="6" ng-maxlength="30" ng-pattern="/^[a-zA-Z]+$/" required>
+                <i class="fa fa-check text-success" ng-show="form.username.$dirty && form.username.$valid">
+                </i>
+                <div ng-show="form.username.$dirty && form.username.$invalid" class="text-danger">
+                  <i class="fa fa-times text-danger"></i>
+                  <span ng-show="form.username.$error.required"> Họ tên không được bỏ trống </span>
+                  <span ng-show="form.username.$error.minlength"> Họ tên phải dài hơn 6 kí tự </span>
+                  <span ng-show="form.username.$error.maxlength"> Họ tên phải ngắn hơn 30 kí tự </span>
+                  <span ng-show="form.username.$error.pattern"> Họ tên bao gồm các kí tự chữ cái hoa </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="col-xs-3 control-label required">Mật khẩu đăng nhập
+              </label>
+              <div class="col-xs-9">
+                <input name="password" ng-model="password" type="password" class="form-control" placeholder="Mật khẩu để đăng nhập"
+                  ng-minlength="6" ng-maxlength="15" required>
+                <i class="fa fa-check text-success" ng-show="form.password.$dirty && form.password.$valid">
+                </i>
+                <div ng-show="form.password.$dirty && form.password.$invalid" class="text-danger">
+                  <i class="fa fa-times text-danger"></i>
+                  <span ng-show="form.password.$error.required">
+                    Mật khẩu không được bỏ trống
+                  </span>
+                  <span ng-show="form.password.$error.minlength">
+                    Mật khẩu phải dài hơn 6 kí tự
+                  </span>
+                  <span ng-show="form.password.$error.maxlength">
+                    Mật khẩu phải ngắn hơn 15 kí tự
+                  </span>
+                </div>
+              </div>
+            </div>
+            Remember me ?
+            <!-- <input type="radio" value="1" ng-model="gender" />
+            <input type="radio" value="2" ng-model="gender" /> -->
+             <input type="radio" ng-model="myVar" value="save" checked="checked"> yes   
+            <input type="radio" ng-model="myVar" value="2" >  no
+            <div ng-switch="myVar">
+              <div ng-switch-when="save">
+                 <p>Cookie sẽ được nhớ | tự động đăng nhập cho lần tiếp theo </p>
+              </div>
+            </div>
+            <div class="btn-box" >
+                <button type="submit" class="btn btn-primary" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">
+                  <a style="color: black;" href="#/!">Đăng nhập</a>  
+                </button>
+                        <div >
+                          <p align="center">Mọi thắc mắc xin liên hệ  <a href="https://www.facebook.com/l.v.van009/" style="color:dodgerblue">Facebook</a>.</p>
+                        </div>
+                   
+            </div>
+            
+        </form>
+    </div>
+    

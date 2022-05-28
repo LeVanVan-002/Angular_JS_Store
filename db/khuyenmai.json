@@ -1,0 +1,29 @@
+[
+    {"id": 435 , "url": "card.jpg",  "khuyenmai": -20 , "tenSP": "Card màn hình Gigabyte RTX 3090" , "gia": 200000 ,"qty":1 , "tonkho": 9 ,
+     "thongtin": "sở hữu hệ thống làm mát ,kéo sợi thay thế,cung cấp tản nhiệt hiệu quả cao." },
+
+    {"id": 445 , "url": "laptop-2.png",  "khuyenmai": -24 , "tenSP": "ASUS" , "gia": 19999999 ,"qty":1 , "tonkho": 8 ,
+    "thongtin": " Full HDCPU: Intel Core i7 Tiger Lake, 2.80 GHzCard: Intel Iris Xe GraphicsNặng: 1.17 kg, Pin: 4-cell Li-ion, 67 Wh" },
+
+    {"id": 24 , "url": "chuot.jpg",  "khuyenmai": -15 , "tenSP": "Chuột Có dây" , "gia": 59000 ,"qty":1 , "tonkho": 6 ,
+    "thongtin": " Thiết kế cổ điển , DPI tối đa 8000 ,Kết nối USB  " },
+
+    {"id": 67 , "url": "mobile-3.png",  "khuyenmai": -10 , "tenSP": "Iphone" , "gia": 16000000 , "qty":1 ,"tonkho": 44 ,
+    "thongtin": "6.1 inch 1792 x 828 pixel CPU:Apple A12 Bionic 6 nhân RAM:3 GBCamera sau:12 MPCamera trước:7 MPBộ nhớ trong:64 GB" },
+
+    {"id": 434 , "url": "phim+chuot.jpg",  "khuyenmai": -17 , "tenSP": "combo bàn phím + chuột" , "gia": 500000 ,"qty":1 , "tonkho": 65 ,
+    "thongtin": " combo 1 bàn phím + 1 chuột không dây dành cho máy tính lap" },
+
+    {"id": 2 , "url": "taingheblu.jpg",  "khuyenmai": -9 , "tenSP": "tai nghe bluetooth" , "gia": 499000 ,"qty":1 , "tonkho": 34 ,
+    "thongtin": "  Tai nghe không dây Airpods , dung lượng pin cao , dùng mọi loại máy tương thích" },
+
+    {"id": 45 , "url": "case.jpg",  "khuyenmai": -5 , "tenSP": "Vỏ case máy tính mặt kính LED" , "gia": 1599000 ,"qty":1 , "tonkho": 43 ,
+    "thongtin": " Vỏ case máy tính cho main serverPhù hợp những loại main to 2 cpu  " },
+
+    {"id": 53 , "url": "mobile-2.png",  "khuyenmai": -3 , "tenSP": "Sony" , "gia": 9999999 ,"qty":1 , "tonkho": 44 ,
+    "thongtin": "Màn hình: 5.2, Full HD Camera sau: 23 MP Camera trước: 13 MP0 CPU: Snapdragon 820 4 nhân RAM: 3 GB " },
+
+    {"id":234  , "url": "laptop-4.png",  "khuyenmai": -6 , "tenSP": "Acer" , "gia": 17999000 ,"qty":1 , "tonkho": 15 ,
+    "thongtin": "15.6 inch, Full HD. CPU: Intel Core i5 Coffee Lake, 2.40 GHz,Nặng: 2.1 kg, Pin: 48 Wh Li-ion" }
+    
+]

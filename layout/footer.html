@@ -1,0 +1,107 @@
+
+<!--  -->
+<div class="">
+    
+        <!--phần giữa-->
+        <footer class="container" style="background-color: rgb(115, 241, 168);">
+            <div class="text-center">
+                <h1 style="color:rgb(52, 102, 211);">LIÊN HỆ</h1>
+                <!--chữ nháy -->
+                <div class=" container ">
+                    <marquee style="border:rgb(42, 42, 204) 2px SOLID">
+                        <h3 class="mau">Hot line : 0763109811_ Email:levanvan@gmail.com Chi nhánh 2</h3>
+                    </marquee>
+                </div>
+                <h3 style="color: RED;">Mua bán điện thoại , máy tính laptop, uy tín toàn quốc giá rẻ </h3>
+            </div>
+            <form name="form">
+            <div class="col-md-4 col-xs-12 mt-3">
+                <h4>Đăng ký nhận tin khuyến mãi</h4>
+                <div class="card-group">
+                    <div class="card mr-2">
+                        <input type="email" class="form-control" id="newsletter-email" 
+                            placeholder="Nhập địa chỉ email"  name="email"  ng-model="email" autocomplete="off"
+                            required>
+                            <i class="fa fa-check text-success" ng-show="form.email.$dirty && form.email.$valid">
+                            </i>
+                            <div ng-show="form.email.$dirty && form.email.$invalid" class="text-danger">
+                              <i class="fa fa-times text-danger"></i>
+                              <span ng-show="form.email.$error.required">Bạn chưa nhập địa chỉ email</span>
+                              <span ng-show="form.email.$error.email">Không đúng định dạng email</span>
+                            </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Gửi</button>
+                </div>
+                <br>
+            </div>
+        </form>
+            <div class="row">
+                <!--bên trái-->
+                <div class="col-xl-6 mt-9">
+                    <form class="">
+                        <!-- phần tử-->
+                        <div class="form-group ">
+                            <label for="HVT"> <i class="fa fa-user"></i> Họ và tên</label>
+                            <input type="text" name="HVT" id="HVT" placeholder="Họ và tên" class="form-control">
+                        </div>
+                        <!-- phần tử-->
+                        <div class="form-group ">
+                            <label for="ĐC"> <i class="fa fa-address-book"></i> Địa chỉ</label>
+                            <input type="text" name="ĐC" id="ĐC" placeholder="Địa chỉ" class="form-control">
+                        </div>
+                        <!-- phần tử-->
+                        <div class="form-group ">
+                            <label for="ĐT"> <i class="fa fa-phone"></i> Điện thoại</label>
+                            <input type="number" name="HVT" id="ĐT" placeholder="Điện thoại" class="form-control">
+                        </div>
+                        <!-- phần tử-->
+                        <div class="form-group ">
+                            <label for="mail"> <i class="fa fa-envelope"></i> Mail</label>
+                            <input type="text" name="mail" id="mail" placeholder="email " class="form-control">
+                        </div>
+                        <!-- phần tử-->
+                        <div class="form-group ">
+                            <label for="ND"> <i class="fa fa-file"></i> Nội dung</label>
+                            <input type="textare" name="ND" id="ND" placeholder="đóng góp ý kiến  " class="form-control">
+                        </div>
+                        <!-- phần tử -->
+                        <button type="button" class="btn btn-primary">Gửi</button>
+                    </form>
+                </div>
+                <!-- bên phải -->
+                <div class="col-xl-6 mt-9 ">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40082.79917734743!2d106.64715933947659!3d10.757276642985017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f6ae3bc2741%3A0xbad8be1778311b62!2sC%E1%BB%ADa%20H%C3%A0ng%20LaptopxachtayShop.com!5e0!3m2!1svi!2s!4v1620007716401!5m2!1svi!2s"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                    <br>
+                    <p>
+                        <a href="#!" class="text-reset ">Về Chúng Tôi </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Câu Hỏi Thường Gặp ?</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Chính Sách & Điều Khoản .</a>
+                    </p>
+                    <div class="author" style="color:red">Made with ♥ by <a href="" target="_blank">lê văn</a></div>
+                </div>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <marquee Behavior="alternate" direction="right">
+                    <h5>Chúc Bạn Một Ngày Vui Vẻ !</h5>
+                </marquee>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="icon-bar">
+    <a href="https://www.facebook.com/l.v.van009/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.tiktok.com/@20092002van?lang=vi-VN" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" class="google"><i class="fa fa-google"></i></a>
+    <a href="https://www.instagram.com/l.v.van_002/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/channel/UCJTHVaWYMcxpPNUTXqFYrpQ" class="youtube"><i
+            class="fa fa-youtube"></i></a>
+</div>

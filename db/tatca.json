@@ -1,0 +1,107 @@
+[
+    {"id": 1 , "url": "tainghe.jpg",  "khuyenmai": -9 ,"tenSP": "Tai Nghe Có Dây", "gia": 150000 , "qty":1 , "tonkho": 11 ,
+     "thongtin": " Thiết kế trẻ trung hiện đại. Công nghệ âm thanh độc quyền" },
+
+    {"id": 2222 , "url": "card.jpg",  "khuyenmai": -0 ,"tenSP": "Card màn hình ", "gia": 250000 ,"qty":1 , "tonkho": 44 ,
+    "thongtin": "sở hữu hệ thống làm mát ,kéo sợi thay thế,cung cấp tản nhiệt hiệu quả cao." , "onSale" : true },
+
+    {"id": 3 , "url": "case.jpg",  "khuyenmai": -11 ,"tenSP": "Vỏ case máy tính mặt kính LED", "gia": 1000000 ,"qty":1 , "tonkho": 21 ,
+    "thongtin": " Vỏ case máy tính cho main serverPhù hợp những loại main to 2 cpu " },
+
+    {"id":4  , "url": "chuot2.jpg",  "khuyenmai": -10 ,"tenSP": "Chuột không dây Logitech G102 ", "gia": 99000 ,"qty":1 , "tonkho": 8 ,
+    "thongtin": " công nghệ mới, di chuyển nhẹ nhàng mà không kén bề mặt, được thiết kế phù hợp" },
+
+    {"id": 5 , "url": "sacdt.jpg",  "khuyenmai": -0 ,"tenSP": "Sạc điện thoại", "gia": 50000 ,"qty":1 , "tonkho": 10 ,
+    "thongtin": " Bộ sạc nhanh dùng cho điện thoại" },
+
+    {"id": 6 , "url": "case3.jpg",  "khuyenmai": -3 ,"tenSP": "Vỏ case XIGMATEK NYX", "gia": 1200000 ,"qty":1 , "tonkho": 60 ,
+    "thongtin": "cho phép nhìn rõ các quạt LED phía trước của bạn trong khi vẫn cung cấp luồng không khí và lưu thông vượt trội" },
+
+    {"id": 7 , "url": "phim+chuot.jpg",  "khuyenmai": -8 ,"tenSP": "combo bàn phím + chuột", "gia": 500000 ,"qty":1 , "tonkho": 12 ,
+    "thongtin": " combo 1 bàn phím + 1 chuột không dây dành cho máy tính lap", "onSale" : true },
+
+    {"id": 8 , "url": "loa1.jpg",  "khuyenmai": -13 ,"tenSP": "loa máy tính", "gia": 260000 ,"qty":1 , "tonkho": 31 ,
+    "thongtin": " loa có âm thanh sắc nét và sống động, nâng tầm trải nghiệm  " },
+
+    {"id": 9 , "url": "taingheblu.jpg",  "khuyenmai": -11 ,"tenSP": "tai nghe bluetooth", "gia": 450000 ,"qty":1 , "tonkho": 34 ,
+    "thongtin": " Tai nghe không dây Airpods , dung lượng pin cao , dùng mọi loại máy tương thích " },
+
+    {"id": 10 , "url": "ram.jpg",  "khuyenmai": -10 ,"tenSP": " Thanh Ram 8GB DDR4 1x8G 2666", "gia": 2000000 ,"qty":1 , "tonkho": 43 ,
+    "thongtin": " ASUS Dung lượng 8GB , bảo hành 36 tháng " },
+
+    {"id": 11 , "url": "phim+chuot2.jpg",  "khuyenmai": -5 ,"tenSP": "chuột + bàn phím (màu hồng)", "gia": 499000 ,"qty":1 , "tonkho": 28 ,
+    "thongtin": "combo 1 bàn phím(hồng)+ 1 chuột không dây dành cho máy tính lap" },
+
+    {"id":12  , "url": "loa2.jpg",  "khuyenmai": -13 ,"tenSP": "Loa máy tính gọn nhẹ", "gia": 899000 ,"qty":1 , "tonkho": 18 ,
+    "thongtin": "dòng loa máy tính entry-level ở phân khúc thấp của hãng Logitech" },
+
+    {"id": 13 , "url": "in_output.jpg",  "khuyenmai": -0 ,"tenSP": "Cáp tín hiệu VGA ", "gia": 99000 ,"qty":1 , "tonkho": 14 ,
+    "thongtin": " Dễ dàng sử dụng Cắm là chạy Sử dụng bền bỉ và an toàn" },
+    
+    {"id":14  , "url": "chuot.jpg",  "khuyenmai": -15 ,"tenSP": "Chuột Có dây", "gia": 160000 ,"qty":1 , "tonkho": 9 ,
+    "thongtin": "Thiết kế cổ điển , DPI tối đa 8000 ,Kết nối USB  " },
+    
+    {"id": 15 , "url": "tainghe.jpg",  "khuyenmai": -11 ,"tenSP": "Tai Nghe Có Dây", "gia": 199000 ,"qty":1 , "tonkho": 11 ,
+    "thongtin": " Thiết kế trẻ trung hiện đại. Pin nghe bền bỉ. Công nghệ âm thanh độc quyền" },
+    { "id": 19 , "url": "galaxynote10.png",  "tenSP": "Galaxy" , "gia": 15000000 ,"qty":1 , "tonkho": 15 ,
+        "thongtin": " RAM:8 GB Bộ nhớ trong: 128 GB SIM: 2 Nano SIMHỗ trợ 4G Pin, Sạc:4310 mAh50 W" },
+   
+    {"id": 20 , "url": "mobile-2.png",  "tenSP": "Sony" , "gia": 8000000 ,"qty":1 , "tonkho": 20 ,
+       "thongtin": " Màn hình: 5.2, Full HD Camera sau: 23 MP Camera trước: 13 MP0 CPU: Snapdragon 820 4 nhân RAM: 3 GB " },
+   
+    {"id": 3333 , "url": "mobile-3.png",  "tenSP": "Iphone" , "gia": 11000000 ,"qty":1 , "tonkho": 39 ,
+       "thongtin": "6.1 inch 1792 x 828 pixel CPU:Apple A12 Bionic 6 nhân RAM:3 GBCamera sau:12 MPCamera trước:7 MPBộ nhớ trong:64 GB" },
+   
+    { "id": 43344 , "url": "mobile.png",  "tenSP": "Xiaomi" , "gia": 8999000 ,"qty":1 , "tonkho": 9 ,
+       "thongtin": " 4 nhân 2.0 GHz & 4 nhân 1.8 GHz8 MP Hỗ trợ thẻ nhớ ngoài,MicroSD Chip đồ họa (GPU)" },
+       {"id": 435 , "url": "card.jpg",  "khuyenmai": -20 , "tenSP": "Card màn hình Gigabyte RTX 3090" , "gia": 200000 ,"qty":1 , "tonkho": 9 ,
+        "thongtin": "sở hữu hệ thống làm mát ,kéo sợi thay thế,cung cấp tản nhiệt hiệu quả cao." },
+   
+       {"id": 445 , "url": "laptop-2.png",  "khuyenmai": -24 , "tenSP": "ASUS" , "gia": 19999999 ,"qty":1 , "tonkho": 8 ,
+       "thongtin": " Full HDCPU: Intel Core i7 Tiger Lake, 2.80 GHzCard: Intel Iris Xe GraphicsNặng: 1.17 kg, Pin: 4-cell Li-ion, 67 Wh" },
+   
+       {"id": 24 , "url": "chuot.jpg",  "khuyenmai": -15 , "tenSP": "Chuột Có dây" , "gia": 59000 ,"qty":1 , "tonkho": 6 ,
+       "thongtin": " Thiết kế cổ điển , DPI tối đa 8000 ,Kết nối USB  " },
+   
+       {"id": 67 , "url": "mobile-3.png",  "khuyenmai": -10 , "tenSP": "Iphone" , "gia": 16000000 , "qty":1 ,"tonkho": 44 ,
+       "thongtin": "6.1 inch 1792 x 828 pixel CPU:Apple A12 Bionic 6 nhân RAM:3 GBCamera sau:12 MPCamera trước:7 MPBộ nhớ trong:64 GB" },
+   
+       {"id": 434 , "url": "phim+chuot.jpg",  "khuyenmai": -17 , "tenSP": "combo bàn phím + chuột" , "gia": 500000 ,"qty":1 , "tonkho": 65 ,
+       "thongtin": " combo 1 bàn phím + 1 chuột không dây dành cho máy tính lap" },
+   
+       {"id": 2 , "url": "taingheblu.jpg",  "khuyenmai": -9 , "tenSP": "tai nghe bluetooth" , "gia": 499000 ,"qty":1 , "tonkho": 34 ,
+       "thongtin": "  Tai nghe không dây Airpods , dung lượng pin cao , dùng mọi loại máy tương thích" },
+   
+       {"id": 45 , "url": "case.jpg",  "khuyenmai": -5 , "tenSP": "Vỏ case máy tính mặt kính LED" , "gia": 1599000 ,"qty":1 , "tonkho": 43 ,
+       "thongtin": " Vỏ case máy tính cho main serverPhù hợp những loại main to 2 cpu  " },
+   
+       {"id": 53 , "url": "mobile-2.png",  "khuyenmai": -3 , "tenSP": "Sony" , "gia": 9999999 ,"qty":1 , "tonkho": 44 ,
+       "thongtin": "Màn hình: 5.2, Full HD Camera sau: 23 MP Camera trước: 13 MP0 CPU: Snapdragon 820 4 nhân RAM: 3 GB " },
+   
+       {"id":234  , "url": "laptop-4.png",  "khuyenmai": -6 , "tenSP": "Acer" , "gia": 17999000 ,"qty":1 , "tonkho": 15 ,
+       "thongtin": "15.6 inch, Full HD. CPU: Intel Core i5 Coffee Lake, 2.40 GHz,Nặng: 2.1 kg, Pin: 48 Wh Li-ion" },
+       {"id": 47 , "url": "laptop-1.png",  "tenSP": "HP" , "gia": 30000000 ,"qty":1 , "tonkho": 31 ,
+        "thongtin": "Bộ vi xử lý i3-1005G1, 4GB RAM xử lý tác vụ ổn định, khả năng đa nhiệm tốt" },
+   
+       {"id": 47 , "url": "laptop-2.png",  "tenSP": "ASUS" , "gia": 21000000 ,"qty":1 , "tonkho": 31 ,
+        "thongtin": "Full HDCPU: Intel Core i7 Tiger Lake, 2.80 GHzCard: Intel Iris Xe GraphicsNặng: 1.17 kg, Pin: 4-cell Li-ion, 67 Wh" },
+   
+       {"id": 49 , "url": "laptop-3.png",  "tenSP": "Dell" , "gia": 17000000 ,"qty":1 , "tonkho": 31 ,
+        "thongtin": "Full HD. CPU: Intel Core i7 Comet Lake, 2.60 GHz. Card: NVIDIA GeForce GTX 1660Ti, 6 GB. Nặng: 2.58 kg, Pin: 4-cell Li-ion, 68 Wh" },
+       { "id": 505 ,"url": "laptop-4.png",  "tenSP": "Acer" , "gia": 19000000 ,"qty":1 , "tonkho": 31 ,
+        "thongtin": "15.6 inch, Full HD. CPU: Intel Core i5 Coffee Lake, 2.40 GHz,Nặng: 2.1 kg, Pin: 48 Wh Li-ion" },
+
+    {"id": 4343 , "url": "mobile-3.png",  "tenSP": "Iphone" , "gia": 11000000 ,"qty":1 , "tonkho": 39 ,
+        "thongtin": "6.1 inch 1792 x 828 pixel CPU:Apple A12 Bionic 6 nhân RAM:3 GBCamera sau:12 MPCamera trước:7 MPBộ nhớ trong:64 GB" },
+            
+    { "id": 4444 , "url": "mobile.png",  "tenSP": "Xiaomi" , "gia": 8999000 ,"qty":1 , "tonkho": 9 ,
+     "thongtin": " 4 nhân 2.0 GHz & 4 nhân 1.8 GHz8 MP Hỗ trợ thẻ nhớ ngoài,MicroSD Chip đồ họa (GPU)" },
+
+     {"id": 90909 , "url": "laptop-3.png",  "tenSP": "Dell" , "gia": 17000000 ,"qty":1 , "tonkho": 31 ,
+        "thongtin": "Full HD. CPU: Intel Core i7 Comet Lake, 2.60 GHz. Card: NVIDIA GeForce GTX 1660Ti, 6 GB. Nặng: 2.58 kg, Pin: 4-cell Li-ion, 68 Wh" },
+       
+        { "id": 564 ,"url": "laptop-4.png",  "tenSP": "Acer" , "gia": 19000000 ,"qty":1 , "tonkho": 31 ,
+        "thongtin": "15.6 inch, Full HD. CPU: Intel Core i5 Coffee Lake, 2.40 GHz,Nặng: 2.1 kg, Pin: 48 Wh Li-ion" }
+
+    
+]

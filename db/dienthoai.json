@@ -1,0 +1,19 @@
+[
+    { "id": 19 , "url": "galaxynote10.png",  "tenSP": "Galaxy" , "gia": 15000000 ,"qty":1 , "tonkho": 15 ,
+     "thongtin": " RAM:8 GB Bộ nhớ trong: 128 GB SIM: 2 Nano SIMHỗ trợ 4G Pin, Sạc:4310 mAh50 W" },
+
+    {"id": 20 , "url": "mobile-2.png",  "tenSP": "Sony" , "gia": 8000000 ,"qty":1 , "tonkho": 20 ,
+    "thongtin": " Màn hình: 5.2, Full HD Camera sau: 23 MP Camera trước: 13 MP0 CPU: Snapdragon 820 4 nhân RAM: 3 GB " },
+
+    {"id": 3333 , "url": "mobile-3.png",  "tenSP": "Iphone" , "gia": 11000000 ,"qty":1 , "tonkho": 39 ,
+    "thongtin": "6.1 inch 1792 x 828 pixel CPU:Apple A12 Bionic 6 nhân RAM:3 GBCamera sau:12 MPCamera trước:7 MPBộ nhớ trong:64 GB" },
+
+    { "id": 43344 , "url": "mobile.png",  "tenSP": "Xiaomi" , "gia": 8999000 ,"qty":1 , "tonkho": 9 ,
+    "thongtin": " 4 nhân 2.0 GHz & 4 nhân 1.8 GHz8 MP Hỗ trợ thẻ nhớ ngoài,MicroSD Chip đồ họa (GPU)" },
+
+    {"id": 4343 , "url": "mobile-3.png",  "tenSP": "Iphone" , "gia": 11000000 ,"qty":1 , "tonkho": 39 ,
+    "thongtin": "6.1 inch 1792 x 828 pixel CPU:Apple A12 Bionic 6 nhân RAM:3 GBCamera sau:12 MPCamera trước:7 MPBộ nhớ trong:64 GB" },
+    
+    { "id": 4444 , "url": "mobile.png",  "tenSP": "Xiaomi" , "gia": 8999000 ,"qty":1 , "tonkho": 9 ,
+    "thongtin": " 4 nhân 2.0 GHz & 4 nhân 1.8 GHz8 MP Hỗ trợ thẻ nhớ ngoài,MicroSD Chip đồ họa (GPU)" }
+]

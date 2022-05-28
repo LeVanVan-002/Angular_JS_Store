@@ -1,0 +1,190 @@
+<nav>
+
+    <!--Navbar có hai phần, một phần trên và một phần dưới cùng-->
+    <!--Đây là phần trên cùng và trong phần này, tôi đặt logo, phần tài khoản của tôi và giỏ hàng-->
+    <div class="navbar-top">
+        <div>
+            <button id="menuButton"><i class="fas fa-bars"></i></button>
+            <!--Logo-->
+            <a href="https://gioithieuvanvlog.blogspot.com/" class="fa fa-snapchat-ghost"></a>
+            <!-- <a href="./trangchu.html">
+                <h2  class="logo"></h2>
+            </a> -->
+        </div>
+        <div>
+            <!--Phần tài khoản của tôi-->
+            <div class="account">
+                <a href="#!dangky">
+                    <button class="account-btn"><i class="fas fa-user-alt"></i></button>
+                    <span class="account-text">
+                       <i>đăng nhập/đăng ký</i>
+                    </span>
+                </a>
+                <!--Khi chúng ta nhấp vào btnShowAccountInfo, phần này sẽ được hiển thị-->
+            </div>
+            <!-- giỏ hàng -->
+            <button id="cart">
+                <i class="fas fa-shopping-cart shoppingCartButton" aria-hidden="true"></i>
+                Giỏ Hàng {{ getTotal() |number }} VNĐ
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thông Tin Giỏ Hàng Của Bạn</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-price cart-header cart-column">
+                                <h4>số lượng</h4>
+                            </span>
+                            <span class="cart-price cart-header cart-column">hình ảnh sản phẩm</span>
+                            <span class="cart-price cart-header cart-column">tên sản phẩm</span>
+                            <span class="cart-item cart-header cart-column">mô tả sản phẩm</span>
+                            <span class="cart-price cart-header cart-column">thành tiền</span>
+                        </div>
+                        <ul>
+                            <li class="animate-repeat cart-row" ng-repeat="cuahang in cart ">
+                                <span class="cart-price cart-header cart-column"><input type="number"
+                                        value="{{ cuahang.qty}}" ng-model="cuahang.qty" min="1" class="qty"></span>
+                                <span class="cart-price cart-header cart-column"> <img
+                                        src="Images/producs-images/tatca/{{cuahang.url}}" alt="popular mobiles"
+                                        width="50" height="50"></span>
+                                <span class="cart-price cart-header cart-column">{{ cuahang.tenSP}}</span>
+                                <span class="cart-item cart-header cart-column">{{ cuahang.thongtin }}</span>
+                                <span class="cart-price cart-header cart-column">{{ (getCost(cuahang) | number) }}
+                                    vnđ</span>
+                                <button class="btn-danger btn-xs" ng-click="removeItem(cuahang);"> xóa- </button>
+                                </br>
+                                </br>
+                            </li>
+                        </ul>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+
+                            <span class="cart-total-price"> {{ getTotal() | number }} Vnđ</span>
+                            <button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!hoadon">
+                            <button type="button" class="btn btn-secondary close-footer ">xem chi tiết</button></a>
+                        <a href="#!thanhtoan">
+                            <button type="button" class="btn btn-primary  close-footer ">Thanh Toán </button>
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-secondary close-footer ">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar" id="navbar">
+        <!-- Thanh tìm kiếm sẽ ở phía bên phải của các liên kết -->
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
+            <!-- form tìm kiếm  -->
+            <div class="searchbar" >
+                <form >
+                    <input type="search" ng-model="timkiemtenSP" placeholder="nhập tên sản phẩm ..." aria-label="Search">
+                    <a class="fa fa-search" id="search-icon" href="#!{{timkiemtenSP}}"><input type="button" value="tìm"></a>
+                </form>
+            </div>
+            <!-- <div><li  ng-repeat="menu in shop | filter : timkiem"></li></div> -->
+            <!-- thanh menu  -->
+            <div class="container">
+                <a class="navbar-brand" href="#!trangchu">Trang Chủ </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cửa Hàng</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown04">
+                                <a class="dropdown-item" href="#!dienthoai">Điện Thoại </a>
+                                <a class="dropdown-item" href="#!maytinh">Máy Tính </a>
+                                <a class="dropdown-item" href="#">....... </a>
+                            </div>
+                        </li> -->
+                        <!-- link giới thiệu cá nhân  -->
+                        <li class="nav-item"><a class="nav-link" href="#!maytinh">Máy Tính</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!dienthoai">Điện Thoại </a></li>
+                        <li class="nav-item active cta"><a href="#!khuyenmai" class="nav-link">Khuyến Mãi </a></li>
+                        <li class="nav-item"><a href="https://gioithieuvanvlog.blogspot.com/" class="nav-link">Giới
+                                Thiệu</a></li>
+                        <li class="nav-item"><a href="#!tragop" class="nav-link">Mua Trả Góp 0%</a></li>
+                        <!-- liên hệ facebook hoặc fanpage fb -->
+                        <li class="nav-item"><a href="#!lienhe" class="nav-link">Liên Hệ +</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark default-color">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"><i class="fab fa-telephone">+0763109811</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</nav>
+<script>
+    // Modal
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("cart");
+    var close = document.getElementsByClassName("close")[0];
+
+
+    var close_footer = document.getElementsByClassName("close-footer")[0];
+    var order = document.getElementsByClassName("order")[0];
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+    close.onclick = function () {
+        modal.style.display = "none";
+    }
+    close_footer.onclick = function () {
+        modal.style.display = "none";
+    }
+    //order.onclick = function() {
+    //  alert("Cảm ơn bạn đã thanh toán đơn hàng")
+    //}
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    // xóa cart
+    var remove_cart = document.getElementsByClassName("btn-danger");
+    for (var i = 0; i < remove_cart.length; i++) {
+        var button = remove_cart[i]
+        but
+
+        var cartRowContents = ` `
+        cartRow.innerHTML = cartRowContents
+        cartItems.append(cartRow)
+        cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', function () {
+            var button_remove = event.target
+            button_remove.parentElement.parentElement.remove()
+            updatecart()
+        })
+        cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', function (event) {
+            var input = event.target
+            if (isNaN(input.value) || input.value <= 0) {
+                input.value = 1;
+            }
+            updatecart()
+        })
+    }
+</script>

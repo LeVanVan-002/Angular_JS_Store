@@ -1,0 +1,102 @@
+<!-- bắt lỗi trên form  -->
+<h1>đăng ký tài khoản  </h1>
+<div id="main">
+  <form id="register-form" class="form-horizontal" name="form" ng-submit="register()" novalidate>
+    <div class="form-group">
+      <label for="email" class="col-xs-3 control-label required">nhập email của bạn</label>
+      <div class="col-xs-9">
+        <input type="email" name="email" class="form-control" placeholder="Email" ng-model="email" autocomplete="off"
+          required>
+        <i class="fa fa-check text-success" ng-show="form.email.$dirty && form.email.$valid">
+        </i>
+        <div ng-show="form.email.$dirty && form.email.$invalid" class="text-danger">
+          <i class="fa fa-times text-danger"></i>
+          <span ng-show="form.email.$error.required">Bạn chưa nhập địa chỉ email</span>
+          <span ng-show="form.email.$error.email">Không đúng định dạng email</span>
+        </div>
+      </div>
+    <div class="form-group">
+      <label for="username" class="col-xs-3 control-label required">Tên đăng nhập 
+      </label>
+      <div class="col-xs-9">
+        <input name="username" type="text" class="form-control" placeholder="Tên đăng nhập" ng-model="username"
+          ng-minlength="6" ng-maxlength="30" ng-pattern="/^[a-zA-Z]+$/" required>
+        <i class="fa fa-check text-success" ng-show="form.username.$dirty && form.username.$valid">
+        </i>
+        <div ng-show="form.username.$dirty && form.username.$invalid" class="text-danger">
+          <i class="fa fa-times text-danger"></i>
+          <span ng-show="form.username.$error.required"> Họ tên không được bỏ trống </span>
+          <span ng-show="form.username.$error.minlength"> Họ tên phải dài hơn 6 kí tự </span>
+          <span ng-show="form.username.$error.maxlength"> Họ tên phải ngắn hơn 30 kí tự </span>
+          <span ng-show="form.username.$error.pattern"> Họ tên bao gồm các kí tự chữ cái hoa </span>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password" class="col-xs-3 control-label required">Mật khẩu đăng nhập
+      </label>
+      <div class="col-xs-9">
+        <input name="password" ng-model="password" type="password" class="form-control" placeholder="Mật khẩu để đăng nhập"
+          ng-minlength="6" ng-maxlength="15" required>
+        <i class="fa fa-check text-success" ng-show="form.password.$dirty && form.password.$valid">
+        </i>
+        <div ng-show="form.password.$dirty && form.password.$invalid" class="text-danger">
+          <i class="fa fa-times text-danger"></i>
+          <span ng-show="form.password.$error.required">
+            Mật khẩu không được bỏ trống
+          </span>
+          <span ng-show="form.password.$error.minlength">
+            Mật khẩu phải dài hơn 6 kí tự
+          </span>
+          <span ng-show="form.password.$error.maxlength">
+            Mật khẩu phải ngắn hơn 15 kí tự
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="form-group">
+      <label for="fone" class="col-xs-3 control-label">Số điện thoại
+      </label>
+      <div class="col-xs-9">
+        <input name="fone" type="number" ng-model="fone" class="form-control" minlength="10" maxlength="11" placeholder="nhập sđt liên hệ"
+          >
+        <i class="fa fa-check text-success" ng-show="form.fone.$dirty && form.fone.$valid"> </i>
+        <div ng-show="form.fone.$dirty && form.fone.$invalid" class="text-danger">
+          <i class="fa fa-times text-danger"></i> Nhập số điện thoại theo đúng định dạng 9->10 số
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-xs-9">
+        <button type="submit" class="btn btn-primary" ng-disabled="!form.$dirty || (form.$dirty && form.$invalid)">
+          Đăng ký <i class="fa fa-sign-in"></i></button>
+          <p>Bạn đã có tài khoản <a href="#!dangnhap">đăng nhập</a>ngay </p>
+      </div>
+      <div ng-show="success" class="text-success text-center">
+        Đăng ký thành viên thành công vui lòng <a href="#!dangnhap">đăng nhập</a> ngay bây giờ !
+      </div>
+    </div>
+  </form>
+</div>
+<style>
+  input.ng-dirty {
+    border-bottom: 1px solid yellow;
+  }
+
+  input.ng-invalid.ng-dirty {
+    border-bottom: 1px solid red;
+  }
+
+  input.ng-valid.ng-dirty {
+    border-bottom: 1px solid rgb(27, 230, 27);
+  }
+
+  input.ng-invalid-minlength.ng-dirty {
+    border-bottom: 1px solid blue;
+  }
+
+  input.ng-invalid-maxlength.ng-dirty {
+    border-bottom: 1px solid blue;
+  }
+</style>
